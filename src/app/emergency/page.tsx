@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const EmergencyPage = () => {
   const cprSteps = [
@@ -71,7 +72,15 @@ const EmergencyPage = () => {
 
 const CprStep = ({ imageUrl, title, description }: { imageUrl: string, title: string, description: string }) => (
   <div className="bg-gray-50 rounded-lg p-4 h-full flex flex-col">
-    <img className="w-full h-48 object-cover rounded-lg mb-4" src={imageUrl} alt={title} />
+    <div className="relative w-full h-48 mb-4">
+        <Image 
+            src={imageUrl} 
+            alt={title} 
+            fill
+            style={{objectFit: "cover"}}
+            className="rounded-lg"
+        />
+    </div>
     <div className="flex flex-col flex-grow">
         <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
         <p className="text-base text-gray-600 mt-1">{description}</p>
