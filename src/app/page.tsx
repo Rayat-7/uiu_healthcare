@@ -8,7 +8,7 @@ export default function HomePage() {
         <div 
           className="relative w-full bg-white rounded-lg shadow-xl overflow-hidden mb-20"
           style={{
-            backgroundImage: `url('https://lh3.googleusercontent.com/rd-gg-dl/ABS2GSm80JiSO8WqX0MFnVC8t7kZip4HqrSjwMkMu6IPbOAT6guMuNDR1J2IbDM_3siIWIQ79tIjBtYEATOqJ9mbt5scesENzaDd1SJGlZcFeTBZfcf39kqH3jkB4Cla3DV4mAEJRyzfEF-n_m3wTAHj7ExO-uJLZSoXXPP-gQRJ9NN6Tk6aCnoNlDyOtmc_XcJu0xnlSVHhrT5LjZuBLI2bLl_4ClJNUyNwHXVJ-eE1p-m3YbhbHGyTxm8UC8eC0yDtf3LtJ5WYSYhJ1fv-Kx91UKKSr74RIqE9oJLVZVYOqDMAGXU73otlZGWmLA2bZ8rA0KIcwpYzNaWtPuw8Qs_3uLzcFmKkCkWqKoaxAcYsmnows_vp1fTStPf4hxhp8o0B8o4iCbslL8P31qPgBUX0kOqa_lcdvOSS-dtB5jp2ywJN_U76s_NMeNmXTZ8Lx2iW15sf2kB5MGEBEJ76y5lBPorbw-yFhO-e3JVgmFpoGl61chCCtQGwlqdbUDlUPcjJQ0qVrJaxM83GsmpBHLjATHm0FB1t0GQkPB-Fz7tSpZpdS7XkJYue2iKIbV-y80TK33f056Ny9ax-MMivgDXj_CmyP5SNihq4HE0yvESu3_6QwBs-7W-pJIj2_vTzDOMr2zEUL6BQlx5s5PA3EcYEVcj0pDxrsIa6BpvOS5u5qqwrEWiM7TyJ7PuK29xtDWyoSJ-KTcFjPFqd7AMvYFtsv1ncRxcFX3yRq6tWv_YDXWdRQJtJpGQTBjQ9am17o_QKkyok_Di2hQmCOSLK7pz7iZfi8haWIyEUsvIRFhWC6ak5RMKY_Z1HYvbs3oRjZWGKbO7ksJm-8XvOkiW5it7G12LiRE8yi_kHYILhZHgQF1pl65Lk6ZhtmGI1p6RCXK-Rq6cZ6v7na121M1Zaf_ddXW9x7VBuEtKdo2MWjryLoZmqM8uDcnkMHZo6x8NEjZF3ozWhXa5btaCJRyOtW65xhnvdfDo9t_zDXgYzuy_R0Ue-oMELkRBcI9OCEE5RUgK-0zAfULp7KVJdkELnTTKGRKGaSIFaKTtQbQLRDeykwlqS8YMMGX4ERyvUiAgkgVy7c2tduYL7xDRcleXcg3M2nkFvzATXz0e8wdyu-pAbuhOwcFnMIt70B2IY4Fg6bGdq4M5h1nFgTjDe0H9TXaNkMnXRVznUknwKMC-c-fqSV5z7sxCQPNhoMAssA5woOfHiFcRL74yG752SpwlEREvsVYN6lmVvTntSC513kjUcm13OWkbv4sAxtAg9yDH537Zi=s1024-rj')`,
+            backgroundImage: `url('/landing-background.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
