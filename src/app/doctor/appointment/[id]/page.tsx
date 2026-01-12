@@ -1,11 +1,17 @@
-import React from 'react';
+'use client';
 
-const AppointmentDetailsPage = ({ params }: { params: { id: string } }) => {
-  // Fetch appointment details based on params.id
+import React, { use } from 'react';
+import Link from 'next/link';
+
+const AppointmentDetailsPage = (props: { params: Promise<{ id: string }> }) => {
+  const params = use(props.params);
   const appointment = {
     id: params.id,
     studentName: 'John Smith',
-    report: 'Feeling unwell, with a persistent cough and mild fever. It has been ongoing for the last 3 days. I have attached a photo of my throat.',
+    studentEmail: 'john.smith@university.edu',
+    emergencyContact: '+1 123-456-7890',
+    symptoms: 'Feeling unwell, with a persistent cough and mild fever. It has been ongoing for the last 3 days.',
+    medicalHistory: 'No significant medical history. No known allergies.',
     attachments: [
       { type: 'image', url: '/placeholder.svg', fileName: 'throat-photo.jpg' },
       { type: 'file', url: '#', fileName: 'blood-test-results.pdf' },
@@ -17,14 +23,32 @@ const AppointmentDetailsPage = ({ params }: { params: { id: string } }) => {
       <main className="container mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-center mb-10">Appointment Details</h1>
         <div className="max-w-4xl mx-auto bg-gray-50 rounded-lg shadow-md p-8">
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-black">Student: {appointment.studentName}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mb-8">
+            <div>
+              <h3 className="text-xl font-semibold text-black">Student</h3>
+              <p className="text-gray-700">{appointment.studentName}</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-black">Email</h3>
+              <p className="text-gray-700">{appointment.studentEmail}</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-black">Emergency Contact</h3>
+              <p className="text-gray-700">{appointment.emergencyContact}</p>
+            </div>
           </div>
+
           <div className="mb-6">
-            <h3 className="text-xl font-semibold text-black mb-2">Report</h3>
-            <p className="text-gray-700 whitespace-pre-line">{appointment.report}</p>
+            <h3 className="text-xl font-semibold text-black mb-2">Symptoms</h3>
+            <p className="text-gray-700 whitespace-pre-line">{appointment.symptoms}</p>
           </div>
-          <div>
+
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-black mb-2">Medical History</h3>
+            <p className="text-gray-700 whitespace-pre-line">{appointment.medicalHistory}</p>
+          </div>
+
+          <div className="mb-8">
             <h3 className="text-xl font-semibold text-black mb-4">Attachments</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {appointment.attachments.map((file, index) => (
@@ -36,6 +60,12 @@ const AppointmentDetailsPage = ({ params }: { params: { id: string } }) => {
                 </a>
               ))}
             </div>
+          </div>
+          
+          <div className="mt-8 border-t pt-8 text-center">
+            <Link href={`/doctor/prescription/${appointment.id}`} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg focus:outline-none focus:shadow-outline transition duration-300">
+                Create Prescription
+            </Link>
           </div>
         </div>
       </main>

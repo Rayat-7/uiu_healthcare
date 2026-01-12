@@ -38,8 +38,10 @@ This document outlines the architecture, features, and design of the UIU HealthC
 
 #### 3. Doctor Role
 
-- **Dashboard (`/doctor/dashboard`)**: A dashboard for doctors to view appointment requests and access student reports.
+- **Dashboard (`/doctor/dashboard`)**: A dashboard for doctors to view appointment requests and access student reports. The appointment requests are displayed in a table with columns for "Patient Name", "Request Type", and "Action".
 - **Manage Availability (`/doctor/availability`)**: A page for doctors to update their availability status (Available/Unavailable).
+- **Appointment Details (`/doctor/appointment/[id]`)**: A page that displays the details of a specific appointment. It includes a "Create Prescription" button.
+- **Create Prescription (`/doctor/prescription/[id]`)**: A page that allows doctors to create and submit prescriptions for their patients. It includes the ability to add multiple medications and recommend tests.
 
 ### Design and Styling
 
