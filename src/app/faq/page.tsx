@@ -9,23 +9,55 @@ const faqs = [
   },
   {
     title: "What are the health center's operating hours?",
-    description: "The health center is open from 9:00 AM to 5:00 PM on weekdays and from 10:00 AM to 2:00 PM on Saturdays. It is closed on Sundays and public holidays.",
+    description: "The health center is open from 9:00 AM to 5:00 PM on weekdays. It is closed on Thursdays, Fridays and public holidays.",
   },
   {
     title: "Do I need an appointment to see a doctor?",
-    description: "Walk-ins are welcome, but we recommend booking an appointment through this portal to avoid long waiting times. For emergencies, no appointment is needed.",
+    description: "Walk-ins are welcome, but booking an appointment in advance reduces waiting time. No appointment is needed in emergencies.",
   },
   {
     title: "Is there a fee for consulting a doctor?",
-    description: "Consultations with our on-campus doctors are free for all registered students and staff members. However, fees may apply for specialized treatments or prescribed medication.",
+    description: "Consultations with on-campus doctors are completely free for all registered students and staff. Fees may apply for specialized treatments or prescribed medication.",
   },
   {
     title: "What services does the mental health counseling provide?",
-    description: "Our counseling services offer confidential support for stress, anxiety, depression, academic pressure, and relationship issues. You can book a session through the student dashboard.",
+    description: "Confidential counseling is offered for stress, anxiety, depression, academic pressure and relationship issues. Sessions can be booked via the student dashboard.",
   },
   {
     title: "How do I submit a health form or medical report?",
-    description: "You can securely submit your health forms and medical reports by logging into your student account and navigating to the 'Submit Report' section.",
+    description: "Students can securely submit forms or reports by logging into their account and using the 'Submit Report' section.",
+  },
+  {
+    title: "How does the portal help in emergencies?",
+    description: "The Emergency Help section provides CPR guidelines, campus emergency contacts and information about nearby hospitals.",
+  },
+  {
+    title: "Can I see real-time doctor availability through the portal?",
+    description: "Yes, the doctor availability section shows doctor's and nurse's online/offline status and duty hours in real-time.",
+  },
+  {
+    title: "Are women's health issues addressed here?",
+    description: "Yes, guidance and confidential support are available for period pain, hygiene and other common women's health issues.",
+  },
+  {
+    title: "Can students view prescriptions online?",
+    description: "Yes, prescriptions given by doctors can be viewed and printed from the student dashboard.",
+  },
+  {
+    title: "Can doctors edit or respond to submitted health forms?",
+    description: "Doctors can review student's health forms from the dashboard and provide medicine recommendations or test suggestions.",
+  },
+  {
+    title: "Is the portal only for students?",
+    description: "No, the portal is designed for both UIU students and staff members.",
+  },
+  {
+    title: "Is personal medical data safe?",
+    description: "Yes, all personal and medical data are securely stored and accessible only by authorized doctors and administrators.",
+  },
+  {
+    title: "Can students track the status of their submitted health complaints?",
+    description: "Yes, the student dashboard shows whether a submitted form is pending, reviewed or responded to by a doctor.",
   }
 ];
 

@@ -12,6 +12,7 @@ This document outlines the architecture, features, and design of the UIU HealthC
 - **Framework**: Next.js (with App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
+- **Icons**: Lucide React
 
 ### Folder Structure
 
