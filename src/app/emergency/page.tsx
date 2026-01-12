@@ -42,6 +42,8 @@ const EmergencyPage = () => {
             </div>
           </div>
 
+          <HeartAttackWarning />
+
           <div className="mt-20">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Nearest Hospitals</h3>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
@@ -87,5 +89,23 @@ const CprStep = ({ imageUrl, title, description }: { imageUrl: string, title: st
     </div>
   </div>
 );
+
+const HeartAttackWarning = () => (
+    <div className="mt-12 bg-red-100 border-l-4 border-red-500 text-red-700 p-6 rounded-md shadow-md">
+        <h3 className="text-2xl font-bold mb-4">If someone is having a heart attack:</h3>
+        <ol className="list-decimal list-inside space-y-2">
+            <li>
+                Call emergency: <strong className="font-bold">999 (Bangladesh)</strong> or UIU Security: <strong className="font-bold">+880-2-55060000</strong>
+            </li>
+            <li>
+                Perform CPR if trained: Chest compressions at 100-120 per minute.
+            </li>
+            <li>
+                Use AED if available on campus.
+            </li>
+        </ol>
+    </div>
+);
+
 
 export default EmergencyPage;
